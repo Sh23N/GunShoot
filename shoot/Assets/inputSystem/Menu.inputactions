@@ -1,0 +1,74 @@
+{
+    "name": "Menu",
+    "maps": [
+        {
+            "name": "UI",
+            "id": "53d29afd-6a41-41ec-ba6d-080179e91500",
+            "actions": [
+                {
+                    "name": "Level1Select",
+                    "type": "Button",
+                    "id": "e0b51dc7-7254-493a-860e-224cfaefc8c0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Level2Select",
+                    "type": "Button",
+                    "id": "ce0254c6-8687-4120-92e1-47c9a3f4f586",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Level3Select",
+                    "type": "Button",
+                    "id": "07b11e03-c725-4acd-9876-460d6710dc52",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5694ce21-f2bb-4035-ac69-847824fbd13d",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Level1Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "882015cb-7b26-4d7e-bf58-6adafbb159ef",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Level2Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "72b0ede2-3c2c-438a-8e99-eaa850acd82a",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Level3Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

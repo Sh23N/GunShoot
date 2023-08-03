@@ -9,7 +9,7 @@ public class EnemyWalk : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enemySpeed = 2 * SceneManager.GetActiveScene().buildIndex + 3;//hard base level
+        enemySpeed = 2 * SceneManager.GetActiveScene().buildIndex + 5;//hard base level
     }
 
     // Update is called once per frame

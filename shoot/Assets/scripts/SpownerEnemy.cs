@@ -4,13 +4,14 @@
 
 using UnityEngine.SceneManagement;
 using UnityEngine;
-using System.Security.AccessControl;
+
+using System;
 
 public class SpownerEnemy : MonoBehaviour
 {
 
     public GameObject Enemy;
-    public float interval = 200;
+    private float interval = 200;
     private float counter = 0;
     int enemyN=0;  //numer of enemies that are instantiated till now
 
@@ -18,14 +19,15 @@ public class SpownerEnemy : MonoBehaviour
     public float t;
     // Start is called before the first frame update
     void Start()
-    {
-
+    {   //System.Random random=new System.Random();
+        interval = Mathf.Floor(100 /SceneManager.GetActiveScene().buildIndex) ;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        Vector3 spawnPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Random.Range(0, Screen.height), 10f));
+        System.Random random = new System.Random();
+        Vector3 spawnPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, random.Next(0, Screen.height), 10f));
         counter += 1;
         if (counter > interval  && enemyN<Control.NumOfenemies)
         {
@@ -45,8 +47,5 @@ public class SpownerEnemy : MonoBehaviour
         
 
     }
-    void OnCollisionEnter(Collision collision)
-    {
 
-    }
 }
